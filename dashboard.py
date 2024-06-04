@@ -11,7 +11,7 @@ st.set_page_config(
 st.header("Original Face Detection")
 st.text("This is web app to detect original faces in an image.")
 
-uploaded_file = st.file_uploader("Choose a face image...", type=['jpg'])
+uploaded_file = st.file_uploader("Choose a face image...", type=['jpg', 'png'])
 
 if uploaded_file is None:
     st.text("Please upload an image file")
